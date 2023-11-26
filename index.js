@@ -10,8 +10,8 @@ const io = require('socket.io')(server, {
 
 let users = [];
 
-app.get('/test',(req, res) => {
-    res.send('This is testing');
+app.get('/',(req, res) => {
+    res.send('Ready to build');
 });
 
 io.on('connection', (socket) => {
